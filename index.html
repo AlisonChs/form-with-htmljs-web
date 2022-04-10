@@ -3,52 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet"/>
     <title>Notas</title>
 </head>
-<body>
-		<table align='center' border ='5px' margin-color='black' bgcolor='white'>
-        <tr><td colspan='2' align='center' bgcolor='white'>Aluno</td> <td>Nota 1</td><td>Nota 2</td><td>Nota 3</td><td>Média</td></tr>
-        <tr bgcolor='White'>
-            <td text-align='right' colspan='2'>Marcos</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td></td>
-        </tr>
+<body background="assets/img/wp.jpg">
+		<table align='center' border ='5px' margin-color='black' bgcolor='white' id="table">
+            <tbody id="tbody1">
+                <tr style="color: white;"><td align='center' bgcolor='white'>Aluno</td> <td>Nota 1</td><td>Nota 2</td><td>Nota 3</td><td>Média</td></tr>
+                <tr bgcolor='White'>
+                    <td text-align='right'>Marcos</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td></td>
+                </tr>
 
-        <tr bgcolor='White'>
-            <td text-align='right' colspan='2'>Carlos</td> 
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td></td>
-        </tr>
+                <tr bgcolor='White'>
+                    <td text-align='right'>Carlos</td> 
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td></td>
+                </tr>
 
-        <tr bgcolor='white'>
-            <td text-align='right' colspan='2'>Juliana</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td></td>
-        </tr>
+                <tr bgcolor='white'>
+                    <td text-align='right'>Juliana</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td></td>
+                </tr>
 
-        <tr bgcolor='White'>
-            <td text-align='right' colspan='2'>Maria</td> 
-            <td>7</td>
-            <td>5</td>
-            <td>4</td>
-            <td></td>
-        </tr>
+                <tr bgcolor='White'>
+                    <td text-align='right'>Maria</td> 
+                    <td>7</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td></td>
+                </tr>
 
-        <tr bgcolor='White'>
-            <td text-align='right' colspan='2'>Kaique</td> 
-            <td>10</td>
-            <td>9</td>
-            <td>10</td>
-            <td></td>
-        </tr>
+                <tr bgcolor='White'>
+                    <td text-align='right'>Kaique</td> 
+                    <td>10</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td></td>
+                </tr>
+
+            </tbody>
         
         </table>
-        <script src="script.js"></script>
+
+        <form>
+
+            <div> <p> Insira seu nome: </p> <input type="text" name="nome" class="nota nome" /> </div>
+
+            <div> <p> Insira sua primeira nota: </p> <input type="number" name="nota1" class="nota nota1" /> </div>
+
+            <div> <p> Insira sua segunda nota: </p> <input type="number" name="nota2" class="nota nota2" /> </div>
+
+            <div> <p> Insira sua terceira nota: </p> <input type="number" name="nota3" class="nota nota3" /> </div>
+
+            <button id="btn-inserir">Inserir</button>
+
+        </form>
+
+        <script src="assets/js/calcularMedia.js"></script>
+        <script src="assets/js/inserirAluno.js"></script>
 </body>
 </html>
